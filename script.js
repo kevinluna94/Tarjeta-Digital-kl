@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   profile.style.transform = "translate(-50%, -50%) scale(1)";
 
-  const radius = 110;
+  const radius = 140; // separación mayor por iconos grandes
   const angleStep = (2 * Math.PI) / buttons.length;
 
   buttons.forEach((btn, i) => {
