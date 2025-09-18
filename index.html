@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Luna - Tarjeta Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="overlay">
+
+    <!-- Texto superior -->
+    <div class="text-info">
+      <h1 class="name">Kevin Luna</h1>
+      <p class="professional">Data Scientist | Full Stack Developer | Negocios Digitales</p>
+      <p class="slogan">“Si tenés una idea, yo te ayudo a hacerla digital”</p>
+    </div>
+
+    <!-- Contenedor central con foto y botones -->
+    <div class="profile-circle">
+      <img src="Imagenes/IMG_20250918_115838_785.jpg" alt="Kevin Luna" class="profile-img">
+
+      <a href="#" class="btn-circle btn-whatsapp" data-bs-toggle="modal" data-bs-target="#modalWhatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" class="btn-circle btn-email" data-bs-toggle="modal" data-bs-target="#modalEmail"><i class="bi bi-envelope-fill"></i></a>
+      <a href="#" class="btn-circle btn-web" data-bs-toggle="modal" data-bs-target="#modalWeb"><i class="bi bi-globe"></i></a>
+      <a href="#" class="btn-circle btn-linkedin" data-bs-toggle="modal" data-bs-target="#modalLinkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="btn-circle btn-github" data-bs-toggle="modal" data-bs-target="#modalGithub"><i class="bi bi-github"></i></a>
+      <a href="#" class="btn-circle btn-instagram" data-bs-toggle="modal" data-bs-target="#modalInstagram"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Modales cuadrados -->
+  <div class="modal fade" id="modalWhatsapp" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-popup">
+        <a href="https://wa.me/5491122334455" target="_blank">
+          <img src="Imagenes/Foto Whatsap.jpg" class="modal-img" alt="WhatsApp">
+          <i class="modal-logo bi bi-whatsapp whatsapp-color"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEmail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-popup">
+        <a href="mailto:kevineluna94@email.com" target="_blank">
+          <img src="Imagenes/Foto Mail.jpg" class="modal-img" alt="Email">
+          <i class="modal-logo bi bi-envelope-fill email-color"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalWeb" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-popup">
+        <a href="https://www.kevinluna.wuaze.com/" target="_blank">
+          <img src="Imagenes/Foto Web.jpg" class="modal-img" alt="Web">
+          <i class="modal-logo bi bi-globe web-color"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLinkedin" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-popup">
+        <a href="https://www.linkedin.com/in/kevin-luna-63bab512b/" target="_blank">
+          <img src="Imagenes/Foto Linkedin.jpg" class="modal-img" alt="LinkedIn">
+          <i class="modal-logo bi bi-linkedin linkedin-color"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGithub" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-popup">
+        <a href="https://github.com/kevinluna94" target="_blank">
+          <img src="Imagenes/Foto Github.jpg" class="modal-img" alt="GitHub">
+          <i class="modal-logo bi bi-github github-color"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalInstagram" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-popup">
+        <a href="https://instagram.com/emprendedordigitalia" target="_blank">
+          <img src="Imagenes/Foto feed Instagram.jpg" class="modal-img" alt="Instagram">
+          <i class="modal-logo bi bi-instagram instagram-color"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

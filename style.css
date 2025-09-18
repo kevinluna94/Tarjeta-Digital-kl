@@ -1,0 +1,134 @@
+/* Fondo */
+.background {
+  background: url("https://i.pinimg.com/736x/7c/84/be/7c84be8edb9786439e1bc7748f101ce2.jpg") 
+              no-repeat center center/cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.65);
+  box-shadow: inset 0 0 0 6px #f4a700, 0 0 40px #f4a700;
+  z-index: -2;
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Texto superior mejorado */
+.text-info {
+  padding: 18px 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  max-width: 320px;
+}
+
+/* Nombre */
+.name {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0 0 14px #f4a700;
+  margin-bottom: 10px;
+}
+
+/* Profesiones */
+.professional {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  margin: 6px 0;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+/* Slogan */
+.slogan {
+  font-style: italic;
+  font-size: 1rem;
+  color: #f4a700;
+  margin-top: 10px;
+}
+
+/* Contenedor central */
+.profile-circle { position: relative; width: 250px; height: 250px; }
+.profile-img {
+  width: 130px; height: 130px; border-radius: 50%;
+  border: 4px solid #f4a700; box-shadow: 0 0 35px #f4a700;
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: zoomIn 0.8s forwards; z-index: 10;
+}
+
+/* Botones circulares */
+.btn-circle {
+  position: absolute; width: 50px; height: 50px;
+  border-radius: 50%; display: flex; justify-content: center; align-items: center;
+  font-size: 1.2rem; color: #fff; text-decoration: none;
+  opacity: 0; transform: translate(-50%, -50%) scale(0);
+  transition: all 0.4s ease;
+}
+.btn-circle:hover { transform: scale(1.4); box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+.btn-whatsapp { background: #25d366; }
+.btn-email { background: #f4a700; color: #000; }
+.btn-web { background: #1e88e5; }
+.btn-linkedin { background: #0077b5; }
+.btn-github { background: #000; }
+.btn-instagram { background: #e1306c; }
+
+/* Modales cuadrados */
+.modal-popup {
+  border-radius: 0;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  width: auto; 
+}
+
+.modal-dialog {
+  max-width: 300px;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-logo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 1.5rem;
+  text-shadow: 0 0 6px #000;
+  z-index: 10;
+}
+
+.whatsapp-color { color: #25d366; }
+.email-color { color: #f4a700; }
+.web-color { color: #1e88e5; }
+.linkedin-color { color: #0077b5; }
+.github-color { color: #000; }
+.instagram-color { color: #e1306c; }
+
+/* Animaciones */
+@keyframes zoomIn { from { transform: translate(-50%, -50%) scale(0); opacity: 0; } to { transform: translate(-50%, -50%) scale(1); opacity: 1; } }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .profile-circle { width: 180px; height: 180px; }
+  .profile-img { width: 100px; height: 100px; }
+  .btn-circle { width: 40px; height: 40px; font-size: 1rem; }
+  .modal-popup { width: 180px; height: 180px; }
+}
