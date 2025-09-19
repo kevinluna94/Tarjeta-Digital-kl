@@ -1,11 +1,11 @@
 /* Fondo */
 .background {
-  background: url("https://i.pinimg.com/736x/7c/84/be/7c84be8edb9786439e1bc7748f101ce2.jpg") 
+  background: url("Imagenes/Foto-perfil.jpg") 
               no-repeat center center/cover;
   position: fixed;
   width: 100%;
   height: 100%;
-  filter: brightness(0.65);
+  filter: brightness(1.0);
   box-shadow: inset 0 0 0 6px #f4a700, 0 0 40px #f4a700;
   z-index: -2;
 }
